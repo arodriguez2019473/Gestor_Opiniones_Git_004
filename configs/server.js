@@ -5,9 +5,11 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
+
 import userRoutes from '../src/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import publicacionRoutes from '../src/publicacion/publicacion.routes.js';
+import comentarioRoutes from '../src/comentarios/comentario.routes.js';
 
 class Server{
 
@@ -18,6 +20,7 @@ class Server{
         this.usuarioPath = '/opinion/v1/users',
         this.authPath = '/opinion/v1/auth',
         this.publicacionPath = '/opinion/v1/publicacion',
+        this.comentarioPath = '/opinion/v1/comentario',
 
         this.middlewares();
         this.conectarDB();
@@ -40,6 +43,7 @@ class Server{
         this.app.use(this.usuarioPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.publicacionPath, publicacionRoutes);
+        this.app.use(this.comentarioPath, comentarioRoutes);
     }
 
     listen(){
