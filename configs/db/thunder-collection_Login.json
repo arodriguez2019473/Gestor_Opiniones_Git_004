@@ -1,0 +1,71 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2024-03-04T03:49:11.608Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "03d23a02-cc7a-458c-8e16-891047c787b0",
+            "colId": "9435e157-81ef-4afb-a7e6-323a34a14c48",
+            "containerId": "",
+            "name": "agregar usuario",
+            "url": "http://localhost:3000/opinion/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T01:28:09.341Z",
+            "modified": "2024-03-04T01:30:25.159Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"auky\",\n  \"password\":\"123456\",\n  \"correo\":\"aukysey@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6fa7856-431b-4b9f-8089-4e17df4b32f8",
+            "colId": "9435e157-81ef-4afb-a7e6-323a34a14c48",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/opinion/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T01:51:39.320Z",
+            "modified": "2024-03-04T02:05:49.118Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"correo\": \"aukysey@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c40173e8-4dc3-496a-8722-8d716cdb00df",
+            "colId": "9435e157-81ef-4afb-a7e6-323a34a14c48",
+            "containerId": "",
+            "name": "editar usuario",
+            "url": "http://localhost:3000/opinion/v1/users/65e5287c23d06875761c49c0",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-04T02:10:05.677Z",
+            "modified": "2024-03-04T02:10:55.675Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjg3YzIzZDA2ODc1NzYxYzQ5YzAiLCJpYXQiOjE3MDk1MTgwNTgsImV4cCI6MTcwOTUyMTY1OH0.hDPL5_uuvTNn3sP7ePAotQJxiAem69wm0TFbUv1vFqI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"auky122\",\n  \"password\":\"123456\",\n  \"correo\":\"aukysey@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

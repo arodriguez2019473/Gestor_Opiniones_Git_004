@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "publicacion",
+    "dateExported": "2024-03-04T03:49:26.326Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "55822eba-fda4-4c04-b7fa-4282e6bdd273",
+            "colId": "864e40db-5c33-4b27-8ebb-8fc449088758",
+            "containerId": "",
+            "name": "CrearPublicacion",
+            "url": "http://localhost:3000/opinion/v1/publicacion",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T02:21:37.226Z",
+            "modified": "2024-03-04T03:14:44.353Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjg3YzIzZDA2ODc1NzYxYzQ5YzAiLCJpYXQiOjE3MDk1MjE2NzEsImV4cCI6MTcwOTUyNTI3MX0.HYd7tKBaL4CptgZIKY2s4yQzeHBXtRBftSUgYWQDCxM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"sey\",\n  \"categoria\":\"2\",\n  \"texto\":\"asdasd\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0675b355-402f-49ca-9d9b-e90ff4e7351a",
+            "colId": "864e40db-5c33-4b27-8ebb-8fc449088758",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:3000/opinion/v1/publicacion/65e53d7f59d44ad92d416aaa",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-04T03:18:32.821Z",
+            "modified": "2024-03-04T03:46:19.155Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjg3YzIzZDA2ODc1NzYxYzQ5YzAiLCJpYXQiOjE3MDk1MjE2NzEsImV4cCI6MTcwOTUyNTI3MX0.HYd7tKBaL4CptgZIKY2s4yQzeHBXtRBftSUgYWQDCxM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"sey\",\n  \"categoria\":\"3\",\n  \"texto\":\"los cocos se pueden utilizar de muchas maneras\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7da7b21c-6eb3-470e-be17-b4c3ab5fa455",
+            "colId": "864e40db-5c33-4b27-8ebb-8fc449088758",
+            "containerId": "",
+            "name": "update Copy",
+            "url": "http://localhost:3000/opinion/v1/publicacion/65e53d7f59d44ad92d416aaa",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-04T03:19:25.560Z",
+            "modified": "2024-03-04T03:20:23.217Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjg3YzIzZDA2ODc1NzYxYzQ5YzAiLCJpYXQiOjE3MDk1MjE2NzEsImV4cCI6MTcwOTUyNTI3MX0.HYd7tKBaL4CptgZIKY2s4yQzeHBXtRBftSUgYWQDCxM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
